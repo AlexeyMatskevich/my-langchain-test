@@ -6,7 +6,7 @@ npm run dev
 
 ```javascript
  // Get data
-const ret = await db.query(`
+const ret = await dbClient.query(`
   SELECT * from todo WHERE id = 1;
 `)
 console.log(ret.rows)
